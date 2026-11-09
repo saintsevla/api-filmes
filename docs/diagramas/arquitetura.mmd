@@ -1,0 +1,10 @@
+flowchart TB
+    U["Usuário<br/>navegador / Postman"] -->|"HTTPS :443"| FE["Front-end do App Service<br/>*.azurewebsites.net"]
+    subgraph AZ["Azure · rg-api-filmes · plano F1"]
+        FE --> UV
+        subgraph APP["Web App Linux · Python 3.12"]
+            UV["Uvicorn :8000<br/>FastAPI"] --> DB[("SQLite<br/>/home/filmes.db")]
+        end
+    end
+    GH["Repositório GitHub"] -->|"git clone"| CS["Azure Cloud Shell"]
+    CS -->|"az webapp up"| UV
