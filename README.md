@@ -5,7 +5,7 @@ Lista de filmes e avaliações com SQLite, hospedada no Azure App Service.
 - **URL da API:** https://<nome-do-seu-app>.azurewebsites.net
 - **Documentação interativa (Swagger):** https://<nome-do-seu-app>.azurewebsites.net/docs
 
-Aluno: <Julia> · RM <559983>
+Aluno: Julia · RM 559983
 
 ## Tecnologias
 
